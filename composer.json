@@ -1,0 +1,12 @@
+{
+    "autoload-dev": {
+        "psr-4": {
+            "Clamp\\": "includes/Clamp",
+            "ConsoleKit\\": "includes/ConsoleKit/src/ConsoleKit",
+            "JsonPath\\": "includes/JsonPath"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    }
+}

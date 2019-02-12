@@ -12,8 +12,10 @@ install:
   # install coreutils for testing, but unlink so we have to explicitly use it
   - brew upgrade coreutils 
   - brew unlink coreutils
+  - ./unit_test_setup.sh
 
 script:
   - ./clamp -h
   - ./clamp config write
   - ./integration_test.sh
+  - ./unit_test.sh
